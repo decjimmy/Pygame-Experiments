@@ -24,15 +24,15 @@ while run:
             run = False
 
     keys = pygame.key.get_pressed()
-
+# TODO get rid of previous rectangles
     if keys[pygame.K_LEFT]:
-        pass
+        x -= vel
     if keys[pygame.K_RIGHT]:
-        pass
+        x += vel
     if keys[pygame.K_UP]:
-        pass
+        y -= vel
     if keys[pygame.K_DOWN]:
-        pass
+        y += vel
 
     pygame.draw.rect(win, (255,9,9), (x,y, width, height))
     pygame.display.update()
