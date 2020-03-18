@@ -23,5 +23,18 @@ while run:
         if event.type == pygame.QUIT: #checks for red x button
             run = False
 
+    keys = pygame.key.get_pressed()
+
+    if keys[pygame.K_LEFT]:
+        pass
+    if keys[pygame.K_RIGHT]:
+        pass
+    if keys[pygame.K_UP]:
+        pass
+    if keys[pygame.K_DOWN]:
+        pass
+
+    pygame.draw.rect(win, (255,9,9), (x,y, width, height))
+    pygame.display.update()
 pygame.quit()
 
